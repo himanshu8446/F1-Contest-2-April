@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Website</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<style>
+* {
+    
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+    background-color: black;
+}
+
+.navbar {
+			position: sticky;
+            width: 1728px;
+            height: 86px;
+            left: 0px;
+            top: 0px;
+			background: #FCAF02;
+
+            
+
+			padding: 10px 20px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			z-index: 1;
+		}
+
+		.navbar ul {
+			display: flex;
+			list-style: none;
+		}
+
+		.navbar li {
+			margin: 0 10px;
+		}
+
+		.navbar a {
+			color: rgb(0, 0, 0);
+			text-decoration: none;
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+		.navbar a:hover {
+			text-decoration: underline;
+		}
+
+        .startup-logo {
+			position: absolute;
+width: 127px;
+height: 39px;
+left: 58px;
+top: 24px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 39px;
+		}
+
+        .heading {
+  position: absolute;
+  width: 736px;
+  height: 78px;
+  left: 58px;
+  top: 174px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  color: #FFFFFF;
+}
+
+.para {
+    border-collapse: collapse;
+    border-color: #FCAF02;
+  position: absolute;
+  width: 917px;
+  height: 238px;
+  left: 63px;
+  top: 285px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  color: #FFFFFF;
+  
+}
+
+.jeff-img {
+  position: absolute;
+  width: 697px;
+  height: 482px;
+  left: 1078px;
+  top: 173px;
+  background: url(jeff.jpg);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.login-btn {
+    position: absolute;
+width: 323px;
+height: 66px;
+left: 63px;
+top: 573px;
+padding: 2px;
+padding-left: 100px;
+background: #FCAF02;
+border-radius: 500px;
+position: absolute;
+width: px;
+height: 39px;
+left: 177px;
+top: 587px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.contact-us {
+  position: absolute;
+  width: 369px;
+  height: 78px;
+  left: 63px;
+  top: 771px;
+}
+
+.contact-us h2 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  color: #FCAF02;
+}
+input {
+  border-radius: 100px;
+  padding: 10px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  position: absolute;
+  width: 325px;
+  height: 82px;
+  left: 685px;
+  top: 1326px;
+}
+
+.submit-button button {
+  box-sizing: border-box;
+  width: 249px;
+  height: 39px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+  background: #FCAF02;
+  border: 2px solid #FCAF02;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.submit-button button:hover {
+  background: #FFFFFF;
+  color: #FCAF02;
+}
+
+.table{
+    border-collapse:collapse ;
+    position: absolute;
+width: 200px;
+height: 34px;
+left: 272px;
+top: 1554px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 34px;
+
+color: #FCAF02;
+    box-sizing: border-box;
+
+position: absolute;
+width: 1582px;
+height: 755px;
+left: 75px;
+top: 1524px;
+
+border: 2px solid #FCAF02;
+    color: #FCAF02;
+    
+    size: 1000px;
+}
+th, td {
+  border: 1px solid #FCAF02;
+}
+td{
+    padding-left: 100px;
+}
+
+.footer{
+    color: black;
+    background-color: #FCAF02;
+}
+
+</style>
+<body>
+    
+
+    <div class="navbar">
+		<span class="startup-logo">Startup</span>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About us</a></li>
+			<li><a href="#">Contact us</a></li>
+			<li><a href="#">Login</a></li>
+		</ul>
+	</div>
+
+    <h1 class="heading">Startup Landing Page</h1>
+    <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <img src="https://image.cnbcfm.com/api/v1/image/103615292-GettyImages-450824074.jpg?v=1570733683&w=929&h=523&vtcrop=y" alt="Jeff Bezos" class="jeff-img">
+    <a href="#" class="login-btn">Login</a>
+    <div class="contact-us">
+        <h2>Contact Us</h2>
+      </div>
+      <div>
+        <input type="text" placeholder="Name" required style="position: absolute; width: 1570px; height: 82px; left: 63px; top: 913px; font-family: 'Montserrat'; font-style: normal; font-weight: 400; font-size: 28px; line-height: 34px; color: #000000; padding: 15px;">
+      </div>
+      
+      <div>
+        <input type="email" placeholder="Email" required style="position: absolute; width: 1570px; height: 82px; left: 63px; top: 1045px; font-family: 'Montserrat'; font-style: normal; font-weight: 400; font-size: 28px; line-height: 34px; color: #000000; padding: 15px;">
+      </div>
+      
+      <div>
+        <input type="tel" placeholder="Mobile Number" required style="position: absolute; width: 730px; height: 82px; left: 63px; top: 1177px; font-family: 'Montserrat'; font-style: normal; font-weight: 400; font-size: 28px; line-height: 34px; color: #000000; padding: 15px;">
+      </div>
+      
+      <div>
+        <input type="text" placeholder="City" required style="position: absolute; width: 767px; height: 82px; left: 866px; top: 1177px; font-family: 'Montserrat'; font-style: normal; font-weight: 400; font-size: 28px; line-height: 34px; color: #000000; padding: 15px;">
+      </div>
+      
+      <div class="submit-button">
+        <button type="submit">Submit Now</button>
+      </div>
+      
+      <table class="table">
+        <thead>
+          <tr>
+            <th>SNO</th>
+            <th>Startup Name</th>
+            <th>Startup Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>WowIndia</td>
+            <td>A startup with WOW ideas.</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Lorem Ipsum</td>
+            <td>Lorem Ipsum</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Lorem Ipsum</td>
+            <td>Lorem Ipsum</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Lorem Ipsum</td>
+            <td>Lorem Ipsum</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Lorem Ipsum</td>
+            <td>Lorem Ipsum</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Lorem Ipsum</td>
+            <td>Lorem Ipsum</td>
+          </tr>
+        </tbody>
+        <tfoot class="footer">
+          <tr>
+            <td>00.</td>
+            <td>Final Footer</td>
+            <td>Lorem Ipsum</td>
+          </tr>
+        </tfoot>
+      </table>
+      
+
+
+</body>
+</html>
